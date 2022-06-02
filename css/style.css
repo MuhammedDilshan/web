@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+@font-face {
+  font-family: "poppinsextrabold";
+  src: url("../fonts/poppins-extrabold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-extrabold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinslight";
+  src: url("../fonts/poppins-light-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsmedium";
+  src: url("../fonts/poppins-medium-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinsregular";
+  src: url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "poppinssemibold";
+  src: url("../fonts/poppins-semibold-webfont.woff2") format("woff2"),
+    url("../fonts/poppins-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "poppinsregular";
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1350px;
+}
+main {
+  height: 100vh;
+  background: url(../images/IMG_5481.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+main {
+  display: flex;
+  align-items: center;
+}
+main header {
+  width: 90px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 0, 0, 0.138);
+  padding: 50px 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  text-align: center;
+}
+main header .logo {
+  width: 50px;
+}
+main header .logo img {
+  width: 100%;
+  display: block;
+}
+main header ul li {
+  margin-bottom: 36px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+main header ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main header ul li::after {
+  content: attr(data-name);
+  visibility: hidden;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ffff;
+  position: absolute;
+  left: 10px;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+main header ul li a {
+  transition: 0.3s ease;
+}
+main header ul li:hover a {
+  transform: scale(1.3);
+}
+main header ul li:hover::after {
+  visibility: visible;
+  opacity: 1;
+  left: 50px;
+}
+main header ul li a {
+  color: #fff;
+}
+main header ul li:last-child {
+  margin-bottom: 0;
+}
+main .text {
+  padding: 0 0 0 350px;
+  text-align: center;
+}
+main .text h1 {
+  line-height: 1.2em;
+  font-size: 46px;
+  font-weight: 700;
+  color: #fff;
+}
+main .text h1 span {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
