@@ -347,11 +347,6 @@ header ul.right li:nth-child(2) {
     padding-bottom: 50px;
 }
 
-#projects h3 {
-    font-size: 70px;
-    text-transform: capitalize;
-    color: #787878;
-}
 
 footer {
     padding: 26px;
@@ -435,13 +430,14 @@ footer p {
     font-size: 41px;
     font-weight: 300;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .swiper-slide .subtitle .button {
     padding: 14px 30px;
-    border-radius: 8px;
-    color: #fff;
-    background-color: #ff9100;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
     display: inline-block;
 }
 
